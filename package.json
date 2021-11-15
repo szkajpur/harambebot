@@ -1,0 +1,14 @@
+{
+  "name": "videobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "szkajpur",
+  "license": "ISC",
+  "dependencies": {
+    "dank-twitch-irc": "^4.3.0"
+  }
+}

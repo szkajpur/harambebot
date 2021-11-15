@@ -1,0 +1,8 @@
+{
+    "username": "bot_name",
+    "password": "oauth: ",
+    "channel": "szkajpur",
+    "admins": ["szkajpur","zneix"],
+    "prefix": "%",
+    "banPath": ""
+}
