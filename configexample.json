@@ -2,7 +2,7 @@
     "username": "bot_name",
     "password": "oauth: ",
     "channel": "szkajpur",
-    "admins": ["szkajpur","zneix"],
+    "adminsPath": "",
     "prefix": "%",
     "banPath": ""
 }
