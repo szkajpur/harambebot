@@ -35,11 +35,12 @@ client.on("PRIVMSG", async (msg) => {
     }
     let args = msg.messageText.slice(config.prefix.length).trim().split(/\s+/);
     const command = args.shift().toLowerCase();
+    let admins = require(config.adminsPath);
     let target = args[0].toLowerCase();
     let bany = require(config.banPath);
     switch(command){
         case "ban":
-            if (!config.admins.includes(msg.senderUsername)){
+            if (!admins.includes(msg.senderUsername)){
                 return;
             }
             console.log(`[ban] -> @${msg.senderUsername}: ${args[0]}`);
@@ -52,7 +53,7 @@ client.on("PRIVMSG", async (msg) => {
             client.say(msg.channelName, `@${msg.senderUsername}, Użytkownik ${target} został zbanowany!`);
             break;
         case "unban":
-            if (!config.admins.includes(msg.senderUsername)){
+            if (!admins.includes(msg.senderUsername)){
                 return;
             }
             console.log(`[unban] -> @${msg.senderUsername}: ${args[0]}`);
